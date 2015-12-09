@@ -22,7 +22,7 @@ public:
 	Part(string oem, string manufacturer, string description, int quantity, float price);
 	~Part();
 
-	void print();
+	virtual void print();
 };
 
 #endif

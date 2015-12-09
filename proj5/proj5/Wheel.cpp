@@ -1,10 +1,12 @@
 #include "Wheel.h"
 #include "Part.h"
-#include <iostream>
-#include <string>
 
-Wheel::Wheel()
+
+Wheel::Wheel() : Part()
 {
+	this->Width = 0;
+	this->AspectRatio = 0.0;
+	this->RimSize = "null";
 }
 
 Wheel::Wheel(int W, double AR, string RS, string O, string M, string D, int Q, float P) 
@@ -17,4 +19,10 @@ Wheel::Wheel(int W, double AR, string RS, string O, string M, string D, int Q, f
 
 Wheel::~Wheel()
 {
+}
+
+bool operator==(Wheel& w1, Wheel& w2)
+{
+	
+	return false;
 }

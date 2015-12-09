@@ -3,10 +3,9 @@
 
 #include "Part.h"
 
-
 class Wheel : public Part
 {
-protected:
+private:
 	string Name = "Wheel";
 	int Width;
 	double AspectRatio;
@@ -17,5 +16,9 @@ public:
 	Wheel(int width, double aspectRatio, string rimSize, string oem, string manufacturer, string description, int quantity, float price);
 	~Wheel();
 };
+
+
+bool operator== (Wheel&, Wheel&);
+
 
 #endif

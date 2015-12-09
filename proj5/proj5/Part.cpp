@@ -1,6 +1,5 @@
 #include "Part.h"
-#include <iostream>
-#include <string>
+
 
 Part::Part(void)
 {
@@ -22,5 +21,9 @@ Part::~Part()
 
 void Part::print()
 {
-	cout << OEM << "\t" << Manufacturer << "\t" << Description << "\t" << Quantity << "\t" << Price << endl;
+	cout << OEM << "\t" 
+		<< Manufacturer << "\t" 
+		<< Description << "\t" 
+		<< Quantity << "\t" 
+		<< Price << endl;
 }

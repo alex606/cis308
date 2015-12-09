@@ -78,11 +78,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Antenna.cpp" />
     <ClCompile Include="Part.cpp" />
     <ClCompile Include="project5.cpp" />
     <ClCompile Include="Wheel.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Antenna.h" />
     <ClInclude Include="Part.h" />
     <ClInclude Include="Wheel.h" />
   </ItemGroup>
