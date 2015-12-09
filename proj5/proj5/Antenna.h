@@ -16,6 +16,10 @@ public:
 	Antenna();
 	Antenna(string type, double size, string material, string oem, string manufacturer, string description, int quantity, float price);
 	~Antenna();
+
+	friend bool operator== (Antenna&, Antenna&);
+	friend bool operator> (Antenna&, Antenna&);
+	friend bool operator< (Antenna&, Antenna&);
 };
 
 #endif

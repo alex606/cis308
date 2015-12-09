@@ -21,8 +21,29 @@ Wheel::~Wheel()
 {
 }
 
+
+// Used width and price as a means to quantify tire quality
 bool operator==(Wheel& w1, Wheel& w2)
 {
-	
-	return false;
+	if (w1.Price == w2.Price && w1.Width == w2.Width)
+	{
+		return true;
+	}
+	else return false;
+}
+bool operator>(Wheel& w1, Wheel& w2)
+{
+	if (w1.Price < w2.Price && w1.Width > w2.Width)
+	{
+		return true;
+	}
+	else return false;
+}
+bool operator<(Wheel& w1, Wheel& w2)
+{
+	if (w1.Price > w2.Price && w1.Width < w2.Width)
+	{
+		return true;
+	}
+	else return false;
 }
