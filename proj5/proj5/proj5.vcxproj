@@ -80,9 +80,11 @@
   <ItemGroup>
     <ClCompile Include="Part.cpp" />
     <ClCompile Include="project5.cpp" />
+    <ClCompile Include="Wheel.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Part.h" />
+    <ClInclude Include="Wheel.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
