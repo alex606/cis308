@@ -15,11 +15,11 @@ private:
 	vector<Wheel> wheels;
 
 public:
-	Inventory(Part);
+	Inventory();
 	~Inventory();
 
 	void AddPart(Part);
-	void showTest();
+	void PrintInventory();
 
 };
 

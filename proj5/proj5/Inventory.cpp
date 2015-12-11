@@ -4,9 +4,8 @@
 
 using namespace std;
 
-Inventory::Inventory(Part startPart)
+Inventory::Inventory()
 {
-	parts.push_back(startPart);
 }
 
 
@@ -19,9 +18,10 @@ void Inventory::AddPart(Part newItem)
 	parts.push_back(newItem);
 }
 
-void Inventory::showTest()
+void Inventory::PrintInventory()
 {
-	cout << parts[0].GetName() << endl;
-	cout << parts[1].GetName() << endl;
-
+	for (int i = 0; i < parts.size(); i++)
+	{
+		parts[i].print();
+	}
 }

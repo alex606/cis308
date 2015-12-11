@@ -1,5 +1,5 @@
 #include "Part.h"
-
+#include <iomanip>
 
 Part::Part(void)
 {
@@ -26,11 +26,14 @@ Part::~Part()
 
 void Part::print()
 {
-	cout << OEM << "\t" 
-		<< Manufacturer << "\t" 
-		<< PartType << "\t" 
-		<< Quantity << "\t" 
-		<< Price << endl;
+	cout << OEM << "\t"
+		<< Manufacturer << "\t"
+		<< PartType << "\t"
+		<< Quantity << "\t$";
+
+	cout << fixed;
+	cout << setprecision(2);
+	cout << Price << endl;
 }
 
 string Part::GetName()
