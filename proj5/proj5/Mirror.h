@@ -27,7 +27,7 @@ public:
 
 	Mirror();
 	Mirror(string YM, MirrorType MY, Side S, string oem, string manufacturer, 
-		string description, int quantity, float price);
+		int quantity, float price);
 	~Mirror();
 
 	

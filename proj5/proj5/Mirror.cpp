@@ -2,8 +2,8 @@
 
 
 Mirror::Mirror(string yearModels, Mirror::MirrorType MT, Mirror::Side S,
-	string O, string M, string D, int Q, float P) 
-	: Part(O, M, D, Q, P,Part::Mirror)
+	string O, string M,int Q, float P) 
+	: Part(O, M, Q, P,Part::Mirror)
 {
 	this->MirrorTypes[0] = "Static Mirror";
 	this->MirrorTypes[1] = "Electric Mirror";

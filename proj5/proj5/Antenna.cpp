@@ -7,8 +7,8 @@ Antenna::Antenna(void) : Part()
 	this->Material = "null";
 }
 
-Antenna::Antenna(string t, double s, string ma, string o, string m, string d, int q, float p)
-	:Part(o,m,d,q,p,Part::Antenna)
+Antenna::Antenna(string t, double s, string ma, string o, string m, int q, float p)
+	:Part(o,m,q,p,Part::Antenna)
 {
 	this->Type = t;
 	this->Size = s;

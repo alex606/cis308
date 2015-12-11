@@ -9,8 +9,8 @@ Wheel::Wheel() : Part()
 	this->RimSize = "null";
 }
 
-Wheel::Wheel(int W, double AR, string RS, string O, string M, string D, int Q, float P) 
-	: Part(O,M,D,Q,P,Part::Wheel)
+Wheel::Wheel(int W, double AR, string RS, string O, string M,int Q, float P) 
+	: Part(O,M,Q,P,Part::Wheel)
 {
 	this->Width = W;
 	this->AspectRatio = AR;

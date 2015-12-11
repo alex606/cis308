@@ -30,11 +30,16 @@ public:
 	};
 
 	Part(void);
-	Part(string oem, string manufacturer, string description, int quantity, float price, PartTypes pt);
+	Part(string oem, string manufacturer, int quantity, float price, PartTypes pt);
 	~Part();
 
 	virtual void print();
-	
+	string GetName(); 
+
+	friend bool operator== (Part&, Part&);
+	friend bool operator> (Part&, Part&);
+	friend bool operator< (Part&, Part&);
+
 };
 
 #endif

@@ -21,6 +21,7 @@ void Inventory::AddPart(Part newItem)
 
 void Inventory::showTest()
 {
-
+	cout << parts[0].GetName() << endl;
+	cout << parts[1].GetName() << endl;
 
 }

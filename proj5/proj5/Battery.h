@@ -12,7 +12,7 @@ private:
 
 public:
 	Battery();
-	Battery(string T, string C, int L, string oem, string manufacturer, string description, int quantity, float price);
+	Battery(string T, string C, int L, string oem, string manufacturer , int quantity, float price);
 	~Battery();
 
 	friend bool operator== (Battery&, Battery&);

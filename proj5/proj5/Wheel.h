@@ -13,7 +13,7 @@ private:
 
 public:
 	Wheel(void);
-	Wheel(int width, double aspectRatio, string rimSize, string oem, string manufacturer, string description, int quantity, float price);
+	Wheel(int width, double aspectRatio, string rimSize, string oem, string manufacturer, int quantity, float price);
 	~Wheel();
 	
 
