@@ -33,28 +33,33 @@ int main(void)
 
 	Inventory inventory;
 
-	inventory.AddPart(Wheel_1);
-	inventory.AddPart(Wheel_2);
-	inventory.AddPart(Wheel_3);
-	inventory.AddPart(Wheel_4);
+	inventory.AddWheel(Wheel_1);
+	inventory.AddWheel(Wheel_2);
+	inventory.AddWheel(Wheel_3);
+	inventory.AddWheel(Wheel_4);
 
-	inventory.AddPart(Mirror_1);
-	inventory.AddPart(Mirror_2);
-	inventory.AddPart(Mirror_3);
-	inventory.AddPart(Mirror_4);
+	inventory.AddMirror(Mirror_1);
+	inventory.AddMirror(Mirror_2);
+	inventory.AddMirror(Mirror_3);
+	inventory.AddMirror(Mirror_4);
 
-	inventory.AddPart(Antenna_1);
-	inventory.AddPart(Antenna_2);
-	inventory.AddPart(Antenna_3);
-	inventory.AddPart(Antenna_4);
+	inventory.AdddAntenna(Antenna_1);
+	inventory.AdddAntenna(Antenna_2);
+	inventory.AdddAntenna(Antenna_3);
+	inventory.AdddAntenna(Antenna_4);
 
-	inventory.AddPart(Battery_1);
-	inventory.AddPart(Battery_2);
-	inventory.AddPart(Battery_3);
-	inventory.AddPart(Battery_4);
+	inventory.AddBattery(Battery_1);
+	inventory.AddBattery(Battery_2);
+	inventory.AddBattery(Battery_3);
+	inventory.AddBattery(Battery_4);
 
 
 	inventory.PrintInventory();
+
+	inventory.PrintByPart(Part::Wheel);
+	inventory.PrintByPart(Part::Mirror);
+	inventory.PrintByPart(Part::Antenna);
+	inventory.PrintByPart(Part::Battery);
 
 	system("Pause");
 	return 0;

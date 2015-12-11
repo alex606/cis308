@@ -17,6 +17,8 @@ public:
 	Antenna(string type, double size, string material, string oem, string manufacturer, int quantity, float price);
 	~Antenna();
 
+	void print();
+
 	friend bool operator== (Antenna&, Antenna&);
 	friend bool operator> (Antenna&, Antenna&);
 	friend bool operator< (Antenna&, Antenna&);

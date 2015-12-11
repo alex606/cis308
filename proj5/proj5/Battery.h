@@ -15,6 +15,8 @@ public:
 	Battery(string T, string C, int L, string oem, string manufacturer , int quantity, float price);
 	~Battery();
 
+	void print();
+
 	friend bool operator== (Battery&, Battery&);
 	friend bool operator> (Battery&, Battery&);
 	friend bool operator< (Battery&, Battery&);

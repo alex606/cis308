@@ -1,6 +1,6 @@
 #include "Wheel.h"
 #include "Part.h"
-
+#include <iomanip>
 
 Wheel::Wheel() : Part()
 {
@@ -21,6 +21,18 @@ Wheel::~Wheel()
 {
 }
 
+void Wheel::print()
+{
+	cout << OEM << "\t"
+		<< Manufacturer << "\t"
+		<< RimSize << " " << AspectRatio << " " << Width << "\t"
+		<< Quantity << "\t$";
+
+	cout << fixed;
+	cout << setprecision(2);
+	cout << Price << endl;
+
+}
 
 // Used width and price as a means to quantify tire quality
 bool operator==(Wheel& w1, Wheel& w2)

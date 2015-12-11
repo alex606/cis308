@@ -30,7 +30,7 @@ public:
 		int quantity, float price);
 	~Mirror();
 
-	
+	void print();
 
 	friend bool operator== (Mirror&, Mirror&);
 	friend bool operator> (Mirror&, Mirror&);

@@ -1,4 +1,5 @@
 #include "Antenna.h"
+#include <iomanip>
 
 Antenna::Antenna(void) : Part()
 {
@@ -17,6 +18,18 @@ Antenna::Antenna(string t, double s, string ma, string o, string m, int q, float
 
 Antenna::~Antenna()
 {
+}
+
+void Antenna::print()
+{
+	cout << OEM << "\t"
+		<< Manufacturer << "\t"
+		<< Type << " " <<  Size << " " << Material << "\t"
+		<< Quantity << "\t$";
+
+	cout << fixed;
+	cout << setprecision(2);
+	cout << Price << endl;
 }
 
 // Used width and price as a means to quantify tire quality

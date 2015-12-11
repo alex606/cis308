@@ -13,14 +13,20 @@ class Inventory
 private:
 	vector<Part> parts;
 	vector<Wheel> wheels;
+	vector<Antenna> antennas;
+	vector<Mirror> mirrors;
+	vector<Battery> batteries;
 
 public:
 	Inventory();
 	~Inventory();
 
-	void AddPart(Part);
+	void AddWheel(Wheel);
+	void AdddAntenna(Antenna);
+	void AddMirror(Mirror);
+	void AddBattery(Battery);
 	void PrintInventory();
-
+	void PrintByPart(Part::PartTypes);
 };
 
 #endif

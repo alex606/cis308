@@ -40,3 +40,22 @@ string Part::GetName()
 {
 	return PartType;
 }
+
+string Part::GetType(Part::PartTypes pt)
+{
+	switch (pt)
+	{
+	case Part::Wheel:
+		return "Wheel";
+		break;
+	case Part::Antenna:
+		return "Antenna";
+		break;
+	case Part::Battery:
+		return "Battery";
+		break;
+	case Part::Mirror:
+		return "Mirror";
+		break;
+	}
+}

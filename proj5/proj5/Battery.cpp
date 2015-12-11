@@ -1,5 +1,5 @@
 #include "Battery.h"
-
+#include <iomanip>
 
 Battery::Battery()
 {
@@ -17,6 +17,18 @@ Battery::Battery(string T, string C, int L,
 
 Battery::~Battery()
 {
+}
+
+void Battery::print()
+{
+	cout << OEM << "\t"
+		<< Manufacturer << "\t"
+		<< Type << " " << Cell << " " << Life << "y" << "\t"
+		<< Quantity << "\t$";
+
+	cout << fixed;
+	cout << setprecision(2);
+	cout << Price << endl;
 }
 
 // Used Life and price as a means to quantify tire quality

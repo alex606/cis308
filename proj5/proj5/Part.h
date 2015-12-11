@@ -20,7 +20,6 @@ protected:
 
 
 public:
-
 	enum PartTypes
 	{
 		Wheel,
@@ -35,6 +34,7 @@ public:
 
 	virtual void print();
 	string GetName(); 
+	static string GetType(PartTypes pt);
 
 	friend bool operator== (Part&, Part&);
 	friend bool operator> (Part&, Part&);

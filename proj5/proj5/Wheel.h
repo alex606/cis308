@@ -16,6 +16,7 @@ public:
 	Wheel(int width, double aspectRatio, string rimSize, string oem, string manufacturer, int quantity, float price);
 	~Wheel();
 	
+	void print();
 
 	friend bool operator== (Wheel&, Wheel&);
 	friend bool operator> (Wheel&, Wheel&);
