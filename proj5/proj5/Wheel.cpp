@@ -33,7 +33,7 @@ bool operator==(Wheel& w1, Wheel& w2)
 }
 bool operator>(Wheel& w1, Wheel& w2)
 {
-	if (w1.Price < w2.Price && w1.Width > w2.Width)
+	if (w1.Price <= w2.Price && w1.Width >= w2.Width)
 	{
 		return true;
 	}
@@ -41,7 +41,7 @@ bool operator>(Wheel& w1, Wheel& w2)
 }
 bool operator<(Wheel& w1, Wheel& w2)
 {
-	if (w1.Price > w2.Price && w1.Width < w2.Width)
+	if (w1.Price >= w2.Price && w1.Width <= w2.Width)
 	{
 		return true;
 	}
