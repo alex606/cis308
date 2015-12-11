@@ -6,10 +6,7 @@
 * C++ Inventory system for an AutoParts shop*
 ***********************************************/
 
-
 #include "Wheel.h"
-#include "Part.h"
-#include <iomanip>
 
 Wheel::Wheel() : Part()
 {

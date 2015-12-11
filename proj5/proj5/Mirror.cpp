@@ -7,7 +7,6 @@
 ***********************************************/
 
 #include "Mirror.h"
-#include <iomanip>
 
 Mirror::Mirror(string yearModels, Mirror::MirrorType MT, Mirror::Side S,
 	string O, string M,int Q, float P) 

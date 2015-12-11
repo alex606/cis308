@@ -26,19 +26,16 @@ void Inventory::AddWheel(Wheel wheel)
 	wheels.push_back(wheel);
 	parts.push_back(wheel);
 }
-
 void Inventory::AdddAntenna(Antenna antenna)
 {
 	antennas.push_back(antenna);
 	parts.push_back(antenna);
 }
-
 void Inventory::AddMirror(Mirror mirror)
 {
 	mirrors.push_back(mirror);
 	parts.push_back(mirror);
 }
-
 void Inventory::AddBattery(Battery battery)
 {
 	batteries.push_back(battery);
@@ -50,7 +47,6 @@ void Inventory::PrintInventory()
 	cout << "OEM \t Manufacturer \t Name \t Quantity \t Inventory Cost" << endl;
 
 	sort(parts.begin(), parts.end());
-
 
 	for (int i = 0; i < parts.size(); i++)
 	{

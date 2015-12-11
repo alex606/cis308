@@ -18,6 +18,8 @@
 
 class Inventory
 {
+	// Each component is stored in their own specialized lists,  
+	// and all componenets are stored in a general list
 private:
 	vector<Part> parts;
 	vector<Wheel> wheels;

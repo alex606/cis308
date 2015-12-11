@@ -7,7 +7,6 @@
 ***********************************************/
 
 #include "Antenna.h"
-#include <iomanip>
 
 Antenna::Antenna(void) : Part()
 {

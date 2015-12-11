@@ -14,7 +14,6 @@
 class Mirror : public Part
 {
 private:
-	string Name = "Mirror";
 	string yearModels;
 	string MirrorTypes[2];
 	string Sides[2];

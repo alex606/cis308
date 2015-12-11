@@ -14,7 +14,6 @@
 class Wheel : public Part
 {
 private:
-	string Name = "Wheel";
 	int Width;
 	double AspectRatio;
 	string RimSize;

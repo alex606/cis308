@@ -15,7 +15,6 @@
 class Antenna : public Part
 {
 private:
-	string Name = "Antenna";
 	string Type;
 	double Size;
 	string Material;

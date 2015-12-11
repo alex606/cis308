@@ -7,7 +7,6 @@
 ***********************************************/
 
 #include "Battery.h"
-#include <iomanip>
 
 Battery::Battery()
 {

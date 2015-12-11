@@ -45,6 +45,7 @@ int main(void)
 	Battery Battery_3("DC", "Dry Cell", 2, "GMC2014", "GoodBattery", 3, 260);
 	Battery Battery_4("DC", "Dry Cell", 2, "FMM2007", "AfterMarket", 3, 250);
 
+	// Created 4 of each componenent and stored them in Inventory data structure
 	Inventory inventory;
 
 	inventory.AddWheel(Wheel_1);
@@ -67,8 +68,10 @@ int main(void)
 	inventory.AddBattery(Battery_3);
 	inventory.AddBattery(Battery_4);
 
+	// Prints each part listed in inventory
 	inventory.PrintInventory();
 
+	// Prints List of each specific component
 	inventory.PrintByPart(Part::Wheel);
 	inventory.PrintByPart(Part::Mirror);
 	inventory.PrintByPart(Part::Antenna);
