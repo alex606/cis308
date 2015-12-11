@@ -7,7 +7,7 @@ Battery::Battery()
 
 Battery::Battery(string T, string C, int L, 
 	string O, string M, string D, int Q, float P)
-	: Part(O, M, D, Q, P)
+	: Part(O, M, D, Q, P,Part::Battery)
 {
 	this->Type = T;
 	this->Cell = C;

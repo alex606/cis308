@@ -7,8 +7,14 @@ Part::Part(void)
 	this->Manufacturer = "null";
 }
 
-Part::Part(string oem, string manufacturer, string description, int quantity, float price)
+Part::Part(string oem, string manufacturer, string description, int quantity, float price, Part::PartTypes pt)
 {
+	Types[0] = "Wheel";
+	Types[1] = "Antenna";
+	Types[2] = "Battery";
+	Types[3] = "Mirror";
+	this->PartType = Types[pt];
+
 	this->OEM = oem;
 	this->Manufacturer = manufacturer;
 	this->Description = description;
@@ -27,3 +33,4 @@ void Part::print()
 		<< Quantity << "\t" 
 		<< Price << endl;
 }
+

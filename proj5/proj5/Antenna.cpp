@@ -8,7 +8,7 @@ Antenna::Antenna(void) : Part()
 }
 
 Antenna::Antenna(string t, double s, string ma, string o, string m, string d, int q, float p)
-	:Part(o,m,d,q,p)
+	:Part(o,m,d,q,p,Part::Antenna)
 {
 	this->Type = t;
 	this->Size = s;

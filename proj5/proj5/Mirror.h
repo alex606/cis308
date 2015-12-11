@@ -8,9 +8,9 @@ class Mirror : public Part
 private:
 	string Name = "Mirror";
 	string yearModels;
-	string MirrorTypes[2] = { "Static Mirror", "Electric Mirror" };
+	string MirrorTypes[2];
+	string Sides[2];
 	string MirrorStyle;
-	string Sides[2] = { "Left", "Right" };
 	string MirrorSide;
 
 public:
@@ -30,9 +30,12 @@ public:
 		string description, int quantity, float price);
 	~Mirror();
 
+	
+
 	friend bool operator== (Mirror&, Mirror&);
 	friend bool operator> (Mirror&, Mirror&);
 	friend bool operator< (Mirror&, Mirror&);
+
 };
 
 #endif
