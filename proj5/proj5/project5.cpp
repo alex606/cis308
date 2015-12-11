@@ -26,10 +26,10 @@ int main(void)
 	Antenna Antenna_3("Simple", 2.23, "fiberglass", "GMC2014", "GoodAntenna", 2, 4.30);
 	Antenna Antenna_4("Electric", 2.23, "fiberglass", "FMM2007", "AfterMarket", 2, 4.30);
 
-	Battery Battery_1("SLI", "Wet Cell", 2, "GMC2012", "FordAndGuys", 3, 5.43);
-	Battery Battery_2("SLI", "Wet Cell", 2, "GMC2014", "GeneralMotors", 3, 5.43);
-	Battery Battery_3("DC", "Dry Cell", 2, "GMC2014", "GoodBattery", 3, 5.43);
-	Battery Battery_4("DC", "Dry Cell", 2, "FMM2007", "AfterMarket", 3, 5.43);
+	Battery Battery_1("SLI", "Wet Cell", 2, "GMC2012", "FordAndGuys", 3, 200);
+	Battery Battery_2("SLI", "Wet Cell", 2, "GMC2014", "GeneralMotors", 3, 210);
+	Battery Battery_3("DC", "Dry Cell", 2, "GMC2014", "GoodBattery", 3, 260);
+	Battery Battery_4("DC", "Dry Cell", 2, "FMM2007", "AfterMarket", 3, 250);
 
 	Inventory inventory;
 

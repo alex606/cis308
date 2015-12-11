@@ -34,7 +34,7 @@ void Wheel::print()
 
 }
 
-// Used width and price as a means to quantify tire quality
+// Used width and price as a means to quantify quality
 bool operator==(Wheel& w1, Wheel& w2)
 {
 	if (w1.Price == w2.Price && w1.Width == w2.Width)

@@ -27,6 +27,7 @@ public:
 	void AddBattery(Battery);
 	void PrintInventory();
 	void PrintByPart(Part::PartTypes);
+	void OrganizePartList();
 };
 
 #endif

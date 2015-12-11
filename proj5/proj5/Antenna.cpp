@@ -32,7 +32,7 @@ void Antenna::print()
 	cout << Price << endl;
 }
 
-// Used width and price as a means to quantify tire quality
+// Used width and price as a means to quantify quality
 bool operator==(Antenna& a1, Antenna& a2)
 {
 	if (a1.Price == a2.Price && a1.Size == a2.Size)

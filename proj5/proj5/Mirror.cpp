@@ -29,7 +29,7 @@ void Mirror::print()
 	cout << Price << endl;
 }
 
-// Used Mirror Type and price as a means to quantify tire quality
+// Used Mirror Type and price as a means to quantify quality
 bool operator==(Mirror& m1, Mirror& m2)
 {
 	if (m1.MirrorStyle == m2.MirrorStyle && m1.Price == m2.Price)

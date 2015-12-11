@@ -59,3 +59,29 @@ string Part::GetType(Part::PartTypes pt)
 		break;
 	}
 }
+
+// Used price as a way to compare parts
+bool operator==(Part& p1, Part& p2)
+{
+	if (p1.Price == p2.Price)
+	{
+		return true;
+	}
+	else return false;
+}
+bool operator>(Part& p1, Part& p2)
+{
+	if (p1.Price > p2.Price)
+	{
+		return true;
+	}
+	else return false;
+}
+bool operator<(Part& p1, Part& p2)
+{
+	if (p1.Price < p2.Price)
+	{
+		return true;
+	}
+	else return false;
+}

@@ -1,7 +1,6 @@
 #include "Inventory.h"
 #include <vector>
-#include "Part.h"
-
+#include <algorithm>
 
 using namespace std;
 
@@ -41,6 +40,10 @@ void Inventory::AddBattery(Battery battery)
 void Inventory::PrintInventory()
 {
 	cout << "OEM \t Manufacturer \t Name \t Quantity \t Inventory Cost" << endl;
+
+	sort(parts.begin(), parts.end());
+
+
 	for (int i = 0; i < parts.size(); i++)
 	{
 		parts[i].print();
@@ -54,24 +57,28 @@ void Inventory::PrintByPart(Part::PartTypes pt)
 	cout << "OEM \t Manufacturer \t Description \t Quantity \t Price Each" << endl;
 	switch (pt){
 		case Part::Wheel:
+			sort(wheels.begin(), wheels.end());
 			for (int i = 0; i < wheels.size(); i++)
 			{
 				wheels[i].print();
 			}
 			break;
 		case Part::Antenna:
+			sort(antennas.begin(), antennas.end());
 			for (int i = 0; i < antennas.size(); i++)
 			{
 				antennas[i].print();
 			}
 			break;
 		case Part::Battery:
+			sort(batteries.begin(), batteries.end());
 			for (int i = 0; i < batteries.size(); i++)
 			{
 				batteries[i].print();
 			}
 			break;
 		case Part::Mirror:
+			sort(mirrors.begin(), mirrors.end());
 			for (int i = 0; i < mirrors.size(); i++)
 			{
 				mirrors[i].print();

@@ -31,7 +31,7 @@ void Battery::print()
 	cout << Price << endl;
 }
 
-// Used Life and price as a means to quantify tire quality
+// Used Life and price as a means to quantify quality
 bool operator==(Battery& b1, Battery& b2)
 {
 	if (b1.Price == b2.Price && b1.Life == b2.Life)
@@ -42,7 +42,7 @@ bool operator==(Battery& b1, Battery& b2)
 }
 bool operator>(Battery& b1, Battery& b2)
 {
-	if (b1.Price <= b2.Price && b1.Life >= b2.Life)
+	if (b1.Price < b2.Price && b1.Life > b2.Life)
 	{
 		return true;
 	}
@@ -50,7 +50,7 @@ bool operator>(Battery& b1, Battery& b2)
 }
 bool operator<(Battery& b1, Battery& b2)
 {
-	if (b1.Price >= b2.Price && b1.Life <= b2.Life)
+	if (b1.Price > b2.Price && b1.Life < b2.Life)
 	{
 		return true;
 	}
