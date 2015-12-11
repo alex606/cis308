@@ -1,3 +1,12 @@
+/**********************************************
+* Name: Alexander Wu							*
+* Date: 12/12/2015								*
+* Assignment: Project 5: Auto Parts				*
+***********************************************
+* C++ Inventory system for an AutoParts shop*
+***********************************************/
+
+
 #include "Wheel.h"
 #include "Part.h"
 #include <iomanip>
@@ -34,10 +43,10 @@ void Wheel::print()
 
 }
 
-// Used width and price as a means to quantify quality
+// Used price as a means to quantify quality
 bool operator==(Wheel& w1, Wheel& w2)
 {
-	if (w1.Price == w2.Price && w1.Width == w2.Width)
+	if (w1.Price == w2.Price)
 	{
 		return true;
 	}
@@ -45,7 +54,7 @@ bool operator==(Wheel& w1, Wheel& w2)
 }
 bool operator>(Wheel& w1, Wheel& w2)
 {
-	if (w1.Price <= w2.Price && w1.Width >= w2.Width)
+	if (w1.Price > w2.Price)
 	{
 		return true;
 	}
@@ -53,7 +62,7 @@ bool operator>(Wheel& w1, Wheel& w2)
 }
 bool operator<(Wheel& w1, Wheel& w2)
 {
-	if (w1.Price >= w2.Price && w1.Width <= w2.Width)
+	if (w1.Price < w2.Price)
 	{
 		return true;
 	}

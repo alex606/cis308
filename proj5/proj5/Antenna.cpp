@@ -1,3 +1,11 @@
+/**********************************************
+* Name: Alexander Wu							*
+* Date: 12/12/2015								*
+* Assignment: Project 5: Auto Parts				*
+***********************************************
+* C++ Inventory system for an AutoParts shop*
+***********************************************/
+
 #include "Antenna.h"
 #include <iomanip>
 
@@ -32,10 +40,10 @@ void Antenna::print()
 	cout << Price << endl;
 }
 
-// Used width and price as a means to quantify quality
+// Used price as a means to quantify quality
 bool operator==(Antenna& a1, Antenna& a2)
 {
-	if (a1.Price == a2.Price && a1.Size == a2.Size)
+	if (a1.Price == a2.Price)
 	{
 		return true;
 	}
@@ -43,7 +51,7 @@ bool operator==(Antenna& a1, Antenna& a2)
 }
 bool operator>(Antenna& a1, Antenna& a2)
 {
-	if (a1.Price < a2.Price && a1.Size > a2.Size)
+	if (a1.Price > a2.Price)
 	{
 		return true;
 	}
@@ -51,7 +59,7 @@ bool operator>(Antenna& a1, Antenna& a2)
 }
 bool operator<(Antenna& a1, Antenna& a2)
 {
-	if (a1.Price > a2.Price && a1.Size < a2.Size)
+	if (a1.Price < a2.Price)
 	{
 		return true;
 	}

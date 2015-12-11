@@ -1,3 +1,11 @@
+/**********************************************
+* Name: Alexander Wu							*
+* Date: 12/12/2015								*
+* Assignment: Project 5: Auto Parts				*
+***********************************************
+* C++ Inventory system for an AutoParts shop*
+***********************************************/
+
 #include "Inventory.h"
 #include <vector>
 #include <algorithm>

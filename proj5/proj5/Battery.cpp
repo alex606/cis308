@@ -1,3 +1,11 @@
+/**********************************************
+* Name: Alexander Wu							*
+* Date: 12/12/2015								*
+* Assignment: Project 5: Auto Parts				*
+***********************************************
+* C++ Inventory system for an AutoParts shop*
+***********************************************/
+
 #include "Battery.h"
 #include <iomanip>
 
@@ -13,7 +21,6 @@ Battery::Battery(string T, string C, int L,
 	this->Cell = C;
 	this->Life = L;
 }
-
 
 Battery::~Battery()
 {
@@ -31,10 +38,10 @@ void Battery::print()
 	cout << Price << endl;
 }
 
-// Used Life and price as a means to quantify quality
+// Used price as a means to quantify quality
 bool operator==(Battery& b1, Battery& b2)
 {
-	if (b1.Price == b2.Price && b1.Life == b2.Life)
+	if (b1.Price == b2.Price)
 	{
 		return true;
 	}
@@ -42,7 +49,7 @@ bool operator==(Battery& b1, Battery& b2)
 }
 bool operator>(Battery& b1, Battery& b2)
 {
-	if (b1.Price < b2.Price && b1.Life > b2.Life)
+	if (b1.Price > b2.Price)
 	{
 		return true;
 	}
@@ -50,7 +57,7 @@ bool operator>(Battery& b1, Battery& b2)
 }
 bool operator<(Battery& b1, Battery& b2)
 {
-	if (b1.Price > b2.Price && b1.Life < b2.Life)
+	if (b1.Price < b2.Price)
 	{
 		return true;
 	}

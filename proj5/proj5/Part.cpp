@@ -1,3 +1,11 @@
+/**********************************************
+* Name: Alexander Wu							*
+* Date: 12/12/2015								*
+* Assignment: Project 5: Auto Parts				*
+***********************************************
+* C++ Inventory system for an AutoParts shop*
+***********************************************/
+
 #include "Part.h"
 #include <iomanip>
 
@@ -75,7 +83,7 @@ bool operator>(Part& p1, Part& p2)
 	{
 		return true;
 	}
-	else return false;
+	else return false; 
 }
 bool operator<(Part& p1, Part& p2)
 {

@@ -1,3 +1,11 @@
+/**********************************************
+* Name: Alexander Wu							*
+* Date: 12/12/2015								*
+* Assignment: Project 5: Auto Parts				*
+***********************************************
+* C++ Inventory system for an AutoParts shop*
+***********************************************/
+
 #include "Mirror.h"
 #include <iomanip>
 
@@ -32,7 +40,7 @@ void Mirror::print()
 // Used Mirror Type and price as a means to quantify quality
 bool operator==(Mirror& m1, Mirror& m2)
 {
-	if (m1.MirrorStyle == m2.MirrorStyle && m1.Price == m2.Price)
+	if (m1.Price == m2.Price)
 	{
 		return true;
 	}
@@ -40,7 +48,7 @@ bool operator==(Mirror& m1, Mirror& m2)
 }
 bool operator>(Mirror& m1, Mirror& m2)
 {
-	if (m1.MirrorStyle <= m2.MirrorStyle && m1.Price <= m2.Price)
+	if (m1.Price > m2.Price)
 	{
 		return true;
 	}
@@ -48,7 +56,7 @@ bool operator>(Mirror& m1, Mirror& m2)
 }
 bool operator<(Mirror& m1, Mirror& m2)
 {
-	if (m1.MirrorStyle >= m2.MirrorStyle && m1.Price >= m2.Price)
+	if (m1.Price < m2.Price)
 	{
 		return true;
 	}
